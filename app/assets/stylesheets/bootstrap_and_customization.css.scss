@@ -1,5 +1,16 @@
-$body-bg: #16a085;
-$navbar-default-bg: #2980b9;
-$navbar-default-link-color: white;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
+$body-bg: 									#ecf0f1;				
+$btn-success-bg:								#1abc9c;
+$btn-primary-bg:								#2980b9;	
+$font-family-sans-serif: 		'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$jumbotron-bg: 							#bdc3c7;
+$navbar-border-radius: 			0;
+$navbar-default-bg: 				#1abc9c;
+$navbar-default-link-color: white;
+$navbar-height: 						45px;
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
