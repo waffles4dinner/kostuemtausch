@@ -16,9 +16,12 @@
    
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <!--
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Über uns", about_path %></li>
+         -->
         <% if user_signed_in? %>
+          <li><%= link_to "Mein Account", edit_user_registration_path %></li>
           <li><%= link_to "Ausloggen", destroy_user_session_path, method: :delete %></li>
         <% else %>
         <li><%= link_to "Einloggen", new_user_session_path %></li>
