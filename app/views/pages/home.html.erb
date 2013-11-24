@@ -1,11 +1,10 @@
 <div class="jumbotron center" >
-	<h1>Hi. Lasst Kostüme tauschen!</h1>
+	<h1>Hi. Lass Kostüme tauschen!</h1>
 	<% if user_signed_in? %>
 		# do something
 	<% else %>
 	<p>
 		<%= link_to "Mitmachen", new_user_registration_path, class: "btn btn-success btn-lg" %>
-	 </p>
-<% end %>
-
+	</p>
+	<% end %>
 </div>
