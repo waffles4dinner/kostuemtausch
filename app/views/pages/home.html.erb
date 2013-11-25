@@ -1,7 +1,7 @@
 <div class="jumbotron center" >
 	<h1>Hi. Lass Kostüme tauschen!</h1>
 	<% if user_signed_in? %>
-		# do something
+		<li><%= link_to 'Add a new Costume', new_pin_path %></li>
 	<% else %>
 	<p>
 		<%= link_to "Mitmachen", new_user_registration_path, class: "btn btn-success btn-lg" %>
