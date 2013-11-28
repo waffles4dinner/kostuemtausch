@@ -1,7 +1,19 @@
-<%= render 'pages/home' %>
+<div class="jumbotron center" >
+  <h1><%= @user.name %>'s pins</h1>
+  <% if user_signed_in? %>
+    <%= link_to 'Add a new Costume', new_pin_path, class: "btn btn-success btn-lg" %>
+  <% else %>
+  <p>
+    <%= link_to "Einloggen", new_user_session_path, class: "btn btn-default btn-lg" %>
+    <%= link_to "Anmelden", new_user_registration_path, class: "btn btn-success btn-lg" %>
+  </p>
+  <% end %>
+</div>
+
+
 
 <div id="pins" class="transitions-enabled">
-  <% @pins.each do |pin| %>
+  <% @user.pins.each do |pin| %>
     <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
@@ -24,8 +36,4 @@
       </div>
     </div>
   <% end %>
-</div>
-
-<div class="center">
-  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
 </div>

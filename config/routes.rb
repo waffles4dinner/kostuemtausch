@@ -2,6 +2,8 @@ Kostuemtausch::Application.routes.draw do
   resources :pins
 
   devise_for :users
+  resources :users
+
   root "pins#index"
   get "about" => "pages#about" # creates about_path
   

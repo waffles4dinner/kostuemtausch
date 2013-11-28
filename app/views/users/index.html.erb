@@ -1,0 +1,11 @@
+<%= render 'pages/home' %>
+
+
+  <% @users.each do |user| %>
+    <p>
+    <%= link_to user do %>    
+      <%= user.name %>
+    <% end %>
+    </p>
+  <% end %>
+

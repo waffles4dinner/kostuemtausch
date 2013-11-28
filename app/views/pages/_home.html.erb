@@ -4,7 +4,8 @@
 		<%= link_to 'Add a new Costume', new_pin_path, class: "btn btn-success btn-lg" %>
 	<% else %>
 	<p>
-		<%= link_to "Mitmachen", new_user_registration_path, class: "btn btn-success btn-lg" %>
+		<%= link_to "Einloggen", new_user_session_path, class: "btn btn-default btn-lg" %>
+		<%= link_to "Anmelden", new_user_registration_path, class: "btn btn-success btn-lg" %>
 	</p>
 	<% end %>
 </div>
